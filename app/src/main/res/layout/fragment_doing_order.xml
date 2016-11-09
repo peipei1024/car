@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.js.car.view.SwipeRefresh
+        android:id="@+id/id_order_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.js.car.view.PullUpMoreListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_order_listview"
+            android:dividerHeight="10dp"
+            android:divider="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.js.car.view.SwipeRefresh>
+</LinearLayout>

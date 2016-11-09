@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="导航"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/id_back_arrow_image"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_left_arrow"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="@dimen/activity_horizontal_margin"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="从"
+            android:textSize="12sp"
+            android:gravity="bottom"
+            android:textColor="#caf0fc"/>
+        <EditText
+            android:id="@+id/id_start_edit"
+            android:paddingBottom="5dp"
+            android:background="@null"
+            android:text="我的位置"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="25dp"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:paddingLeft="23dp"
+        android:background="@color/colorMain"
+        android:paddingRight="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp">
+            <TextView
+                android:id="@+id/id_left"
+                android:layout_marginLeft="5dp"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#caf0fc"/>
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@id/id_left"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#caf0fc"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/id_exchange_image"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_exchange"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:background="@color/colorMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:textColor="#caf0fc"/>
+        <EditText
+            android:id="@+id/id_stop_edit"
+            android:background="@null"
+            android:text="我的位置"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_app_view"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_scan_code"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="使用app地图"
+                android:textColor="@color/colorTextMain"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_phone_view"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="使用本机地图"
+                android:textColor="@color/colorTextMain"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

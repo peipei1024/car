@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <android.support.v7.widget.Toolbar
+            android:background="@color/colorMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/car_info_tv"
+                    android:text="绑定汽车"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/id_back_arrow_image"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_left_arrow"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="@dimen/activity_horizontal_margin"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_bind_car"/>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/id_save_view"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_save"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="保存"
+                android:textColor="@color/colorTextMain"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_scan_code_view"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_scan_code"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="扫描二维码"
+                android:textColor="@color/colorTextMain"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_edit_view"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="85dp">
+            <ImageView
+                android:id="@+id/id_image"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:text="编辑"
+                android:id="@+id/id_text"
+                android:textColor="@color/colorTextMain"
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

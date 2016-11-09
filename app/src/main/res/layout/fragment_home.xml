@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorMain"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/id_car_text"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:text="宝马(白) 京A•15789"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@id/id_car_text"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_down_triangle"/>
+        <ImageView
+            android:id="@+id/id_plus_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_plus"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.js.car.view.BannerImg
+        android:id="@+id/id_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <com.js.car.view.GridViewForScrollView
+        android:scrollbars="none"
+        android:id="@+id/id_gridview"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"></com.js.car.view.GridViewForScrollView>
+
+</LinearLayout>

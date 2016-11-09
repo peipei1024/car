@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <com.js.car.view.RoundImageView
+            android:id="@+id/id_image_head"
+            android:src="@drawable/head"
+            imagecontrol:border_inside_color="#fff7f2e9"
+            imagecontrol:border_thickness="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="你猜我是谁"
+            android:id="@+id/id_text_user_name"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorTextMain"
+            android:gravity="center"/>
+        <TextView
+            android:text="50元  97#汽油"
+            android:id="@+id/id_text_phone"
+            android:textColor="@color/colorTextPrompt"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:text="服务很好"
+        android:id="@+id/id_text_content"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/colorTextMain"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <RelativeLayout
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="2015-06-01 17:00"
+            android:id="@+id/id_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorTextPrompt"
+            android:gravity="center_vertical|right"/>
+        <RatingBar
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/id_starts_ratingbar"
+            android:numStars="5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <TextView
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

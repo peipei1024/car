@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <android.support.v7.widget.Toolbar
+            app:logo="@null"
+            android:id="@+id/id_toolbar"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/id_back_arrow_image"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_black_arrow_left"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="加油站"
+                    android:textSize="18sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="15"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_gravity="center"
+                    android:id="@+id/id_share_image"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/icon_share"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="3"/>
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/id_more_image"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/icon_more"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/content_station"/>
+
+    <LinearLayout
+        android:id="@+id/id_go_view"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="right"
+        android:layout_width="60dp"
+        android:orientation="vertical"
+        android:background="@drawable/circular"
+        android:layout_height="60dp">
+        <ImageView
+
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_go"/>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="去这里"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/id_view_type"
+    android:paddingTop="10dp"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+    <ImageView
+        android:id="@+id/id_image"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/icon_gps"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/id_text"
+        android:textColor="@color/colorTextMain"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+</LinearLayout>

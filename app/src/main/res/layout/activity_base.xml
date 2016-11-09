@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/id_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        ></FrameLayout>
+
+    <LinearLayout
+        android:background="@color/colorTab"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/id_home_view"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/id_home_image"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_home_select"/>
+            <TextView
+                android:id="@+id/id_home_text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="首页"
+                android:textColor="@color/colorTextMain"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_message_view"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/id_message_image"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_news_unselect"/>
+            <TextView
+                android:id="@+id/id_message_text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="新闻"
+                android:textColor="@color/colorTextMain"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_my_view"
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/id_my_image"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:src="@mipmap/icon_my_unselect"/>
+            <TextView
+                android:id="@+id/id_my_text"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="我的"
+                android:textColor="@color/colorTextMain"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/control_fab"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="bottom|right"
+        android:src="@mipmap/icon_music_stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</android.support.design.widget.CoordinatorLayout>

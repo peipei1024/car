@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/my_location"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignBottom="@id/map"
+        android:background="#f2f2f2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:layout_alignBottom="@id/map"
+            android:background="#f2f2f2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="我的位置"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_location_infor"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="在中北大学附近"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="详情"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=">"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="35dp" />
+    </LinearLayout>
+</RelativeLayout>

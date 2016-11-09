@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:id="@+id/id_station_view"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">'
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/id_pic_image"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/station"/>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/id_name_text"
+                android:gravity="center_vertical"
+                android:text="中国石化向阳加油站"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorTextMain"/>
+            <RatingBar
+                android:id="@+id/id_starts_ratingbar"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/id_address_text"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorTextPrompt"
+                    android:text="尖草坪区新兰路向阳街附近"/>
+                <TextView
+                    android:id="@+id/id_distance_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="500m"
+                    android:visibility="invisible"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTextPrompt"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+</LinearLayout>
